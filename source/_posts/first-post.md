@@ -6,10 +6,11 @@ tags:
 
 ## Why this Site?
 
-- Just sharing the thoughts with the world. Will be writing mostly about computer science
-- This site is powered by github pages (Free!!)
+- Welcome to my corner of the internet! This blog serves as a platform for me to share my thoughts with the world. You'll find posts primarily focused on computer science topics that interest me or that I'm currently exploring.
+- One cool thing about this site? It's powered by GitHub Pages, which means it's completely free to host! And the content is written in markdown.
 
 ## Setup
-- https://github.com/hexojs/hexo
-- Theme https://github.com/probberechts/hexo-theme-cactus
+- Link - https://nirmeshk.github.io/blog/
+- Created using hexojs - https://github.com/hexojs/hexo
+- Theme used - https://github.com/probberechts/hexo-theme-cactus
 - Published to github pages - https://pages.github.com/
