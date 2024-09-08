@@ -98,6 +98,21 @@ ignore:
 ## Themes: https://hexo.io/themes/
 theme: cactus
 
+theme_config:
+    colorscheme: classic
+    nav:
+        home: /
+        about: /about/
+        projects: http://github.com/nirmeshk
+        # LINK_NAME: URL <- Use this format for future links
+    social_links:
+        -
+            icon: github
+            link: http://github.com/nirmeshk
+        -
+            icon: twitter
+            label: "@nirmesh-91"
+            link: http://x.com/nirmesh91
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
