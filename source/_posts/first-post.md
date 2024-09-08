@@ -9,6 +9,12 @@ tags:
 - Welcome to my corner of the internet! This blog serves as a platform for me to share my thoughts with the world. You'll find posts primarily focused on computer science topics that interest me or that I'm currently exploring.
 - One cool thing about this site? It's powered by GitHub Pages, which means it's completely free to host! And the content is written in markdown.
 
+## Inspirations for this blog
+Following authors have inspired me to write
+- https://brooker.co.za/blog/ - Marc Brooker
+- https://muratbuffalo.blogspot.com/ - Murat Demirbas
+- https://eatonphil.com/ - Phil Eaton
+
 ## Setup
 - Link - https://nirmeshk.github.io/blog/
 - Created using hexojs - https://github.com/hexojs/hexo
