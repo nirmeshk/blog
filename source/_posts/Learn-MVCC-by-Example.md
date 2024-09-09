@@ -107,7 +107,7 @@ This implementation is simplified and doesn't include features like commit/rollb
 
 Would you like me to explain any part of this implementation in more detail?
 
-### What is required to implement this intro serializable txns?
+### Implementing Serializable Txns
 
 
 To implement serializable transactions in our MVCC system, we need to add several key features to ensure that concurrent transactions behave as if they were executed serially. Here's what we need to add:
@@ -335,7 +335,7 @@ To further improve this system, we might consider:
 3. Implementing a more efficient conflict detection mechanism, possibly using timestamps or multi-version timestamps.
 4. Adding support for distributed transactions.
 
-### Implementing a more efficient conflict detection mechanism, possibly using timestamps or multi-version timestamps
+### Optimization - Timestamp-based conflict detection
 
 In our current implementation, we're using a relatively simple approach to detect conflicts: we check all active transactions for potential conflicts every time we perform a read or write operation. This can become inefficient as the number of concurrent transactions increases. Using timestamps or multi-version timestamps can provide a more scalable approach to conflict detection. Here's how these mechanisms work:
 
@@ -432,7 +432,7 @@ This approach allows for efficient conflict detection and resolution, as well as
 
 Implementing such a system would make our MVCC more efficient and scalable, especially when dealing with a high number of concurrent transactions. However, it also introduces additional complexity in terms of version management and garbage collection of old versions.
 
-### Lets write tests that proves that most of the transactions anamolies do not exists with this implementations
+### Testing
 
 Let's focus on the following anomalies:
 1. Dirty Read
