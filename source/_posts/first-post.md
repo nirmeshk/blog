@@ -14,9 +14,11 @@ Following authors have inspired me to write
 - https://brooker.co.za/blog/ - Marc Brooker
 - https://muratbuffalo.blogspot.com/ - Murat Demirbas
 - https://eatonphil.com/ - Phil Eaton
+- https://mattklein123.dev/ - Matt Klein 
 
 ## Setup
 - Link - https://nirmeshk.github.io/blog/
 - Created using hexojs - https://github.com/hexojs/hexo
 - Theme used - https://github.com/probberechts/hexo-theme-cactus
 - Published to github pages - https://pages.github.com/
+- Setup of this blog using Hexo was inspired by [https://mattklein123.dev/](https://mattklein123.dev/2020/03/08/2020-03-07-new-website/)
