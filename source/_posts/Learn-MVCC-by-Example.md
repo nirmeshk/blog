@@ -1,14 +1,11 @@
 ---
-title: Learn MVCC by Example
+title: Multi-Version Concurrency Control(MVCC) by Example
 date: 2024-09-08 16:04:47
 tags:
 ---
 ## Overview
-MVCC (Multi-Version Concurrency Control) is commonly used concurrency control mechanism in postgresql. While reading different textual or pseudocode versions of MVCC algorithms is a good starting point, they often gloss over important implementation details. These details then show up in other related works, making it even harder to comprehend those texts.
-
-Another reason to attempt an implementation is that production-ready implementations out there have complexities related to the context they are embedded in. So while you can read code from PostgreSQL's implementation, you might have to read a lot more code than required to just understand MVCC.
-
-This blog post is an attempt to provide enough implementation details, using Java, to help me grasp the nuances of MVCC better. The goal is not to present production-ready code but rather to serve as a learning resource. By walking through a practical implementation, I will learn about the real-world challenges and considerations involved in building an MVCC system.
+Multi-Version Concurrency Control (MVCC) is a powerful concurrency control mechanism widely used in modern database management systems, particularly in PostgreSQL. If you are new to this topic, start at [^1] & [^2] for introduction. While MVCC is a well-established concept, understanding its intricacies can be challenging, especially when trying to bridge the gap between theoretical knowledge and practical implementation.
+This blog post aims to learn MVCC by taking a hands-on implementation in Java. Our goal is to create a simplified yet functional version of MVCC that illustrates its core principles and mechanisms.
 
 
 ### Basic MVCC in java
@@ -595,3 +592,10 @@ These tests demonstrate that our MVCC implementation provides serializable isola
 5. The tests assume that the database operations (`get`, `put`, etc.) don't throw checked exceptions. If they do, you'll need to adjust the test methods to declare these exceptions.
 
 To run these tests, you'll need to have JUnit 5 in your project's classpath. These tests provide a good starting point for verifying the correctness of your MVCC implementation, but remember that thorough testing of a concurrent system often requires more extensive scenarios and stress testing.
+
+
+### References
+
+[^1] https://www.interdb.jp/pg/pgsql05.html
+
+[^2] https://15445.courses.cs.cmu.edu/spring2023/notes/18-multiversioning.pdf
